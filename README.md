@@ -4,22 +4,11 @@
 <!--                     SECTION 1 — HERO BANNER                   -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:1a1f2e,100:00d4ff&height=200&section=header&text=Jujjarapu%20Rakesh&fontSize=52&fontColor=00d4ff&fontAlignY=38&desc=Electronics%20%26%20Communication%20Engineer&descAlignY=60&descColor=c9d1d9&animation=fadeIn" width="100%" />
-
-<br/>
-
-# Hi 👋 I'm Jujjarapu Rakesh
-
 <p align="center">
-  <img src="https://img.shields.io/badge/VLSI%20Design-00d4ff?style=for-the-badge&logo=microchip&logoColor=0d1117" />
-  <img src="https://img.shields.io/badge/RTL%20Design-0080ff?style=for-the-badge&logo=verilog&logoColor=white" />
-  <img src="https://img.shields.io/badge/Embedded%20Systems-1a8cff?style=for-the-badge&logo=arduino&logoColor=white" />
-  <img src="https://img.shields.io/badge/IoT%20Development-00b4d8?style=for-the-badge&logo=raspberry-pi&logoColor=white" />
-  <img src="https://img.shields.io/badge/Digital%20Systems-0077b6?style=for-the-badge&logo=intel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Verilog%20HDL-023e8a?style=for-the-badge&logo=xilinx&logoColor=white" />
+  <img 
+  src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=260&section=header&text=Jujjarapu%20Rakesh%20&desc=VLSI%20Enthusiast%20|%20RTL%20Design%20|%20Digital%20Electronics&descSize=22&descAlignY=60&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=38"
+/>
 </p>
-
-<br/>
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <!--               SECTION 2 — TYPING SVG ANIMATION                -->
@@ -36,11 +25,11 @@
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
 <p align="center">
-  <img src="https://img.shields.io/github/followers/jujjarapurakesh?label=Followers&style=for-the-badge&color=00d4ff&labelColor=0d1117&logo=github" />
+  <img src="https://img.shields.io/github/followers/Rakesh473?label=Followers&style=for-the-badge&color=00d4ff&labelColor=0d1117&logo=github" />
   &nbsp;
-  <img src="https://komarev.com/ghpvc/?username=jujjarapurakesh&label=Profile+Views&color=00d4ff&style=for-the-badge&labelColor=0d1117" />
+  <img src="https://komarev.com/ghpvc/?username=Rakesh473&label=Profile+Views&color=00d4ff&style=for-the-badge&labelColor=0d1117" />
   &nbsp;
-  <img src="https://img.shields.io/badge/CGPA-9.18%20%2F%2010.0-00d4ff?style=for-the-badge&logo=academia&logoColor=white&labelColor=0d1117" />
+  <img src="https://img.shields.io/badge/CGPA-9.11%20%2F%2010.0-00d4ff?style=for-the-badge&logo=academia&logoColor=white&labelColor=0d1117" />
 </p>
 
 <br/>
@@ -53,72 +42,42 @@
 <!--              SECTION 4 — ABOUT ME IN VERILOG STYLE            -->
 <!-- ═══════════════════════════════════════════════════════════════ -->
 
-## 🔌 `module Jujjarapu_Rakesh`
+##  🧑‍💻 About Me 
 
 ```verilog
 // ============================================================
 //  Module     : Jujjarapu_Rakesh
 //  Description: Electronics & Communication Engineering Student
-//  Version    : 2025.1
 //  Status     : ACTIVE | LEARNING | BUILDING
 // ============================================================
 
 module Jujjarapu_Rakesh (
-    input  wire  curiosity,
-    input  wire  dedication,
-    output reg   innovation,
-    output reg   impact
+    input  wire curiosity,
+    input  wire dedication,
+    output reg  innovation
 );
 
-// — Identity Parameters —
-parameter NAME        = "Jujjarapu Rakesh";
-parameter DEGREE      = "B.Tech — Electronics & Communication Engineering";
-parameter CGPA        = 9.18;
-parameter STATUS      = "Undergraduate Student";
+// Personal Info
+  localparam NAME     = " Jujjarapu Rakesh";
+  localparam ROLE     = "ECE Student @ Aditya University";
+  localparam LOCATION = "Murari, Andhra Pradesh, India";
+  localparam CGPA     = 9.11;
 
-// — Core Interest Domains —
-reg [7:0] domains [0:6];
-initial begin
-    domains[0] = "VLSI Design";
-    domains[1] = "RTL Design & Verification";
-    domains[2] = "Embedded Systems";
-    domains[3] = "IoT Development";
-    domains[4] = "Digital Logic Design";
-    domains[5] = "Hardware-Software Integration";
-    domains[6] = "Semiconductor Technologies";
-end
+  // Core Interests
+  localparam FOCUS_1  = "VLSI Design";
+  localparam FOCUS_2  = "Design & Verification";
+  localparam FOCUS_3  = "Digital Electronics";
+  localparam FOCUS_4  = "FPGA Development";
+  localparam FOCUS_5  = "IoT Development";
 
-// — Technical Languages —
-reg [7:0] languages [0:3];
-initial begin
-    languages[0] = "Verilog HDL";
-    languages[1] = "C / C++";
-    languages[2] = "Python";
-    languages[3] = "Assembly (Basic)";
-end
-
-// — Current Focus —
-always @(posedge curiosity) begin
-    if (dedication) begin
-        innovation <= explore(RTL_Design, VLSI_EDA_Tools);
-        impact     <= build(Embedded_Projects, IoT_Systems);
-    end
-end
-
-// — System Traits —
-task display_traits;
-    $display("Problem Solver    : TRUE");
-    $display("Fast Learner      : TRUE");
-    $display("Team Collaborator : TRUE");
-    $display("Detail Oriented   : TRUE");
-endtask
-
+  always @(*) begin
+    if (curiosity && dedication)
+      innovation = 1'b1;
+  end
 endmodule
 ```
 
 <br/>
-
-### 👨‍💻 About Me
 
 > I'm a passionate **Electronics & Communication Engineering** student with a strong foundation in digital systems design and embedded development. My academic journey has driven me deep into the world of **VLSI design**, **RTL coding with Verilog HDL**, and real-world **IoT system development**.
 
@@ -128,7 +87,7 @@ endmodule
 - 🧮 Strong command of **Digital Logic Design** — combinational and sequential circuits, FSMs, K-Maps
 - 🔬 Curious about **Semiconductor Technologies** and how silicon becomes intelligence
 - 🤝 Committed to **Hardware–Software Integration** — bridging firmware with the physical world
-- 🏆 Consistent **9.18 CGPA** reflecting academic excellence and technical rigor
+- 🏆 Consistent **9.11 CGPA** reflecting academic excellence and technical rigor
 
 ---
 
@@ -141,41 +100,14 @@ endmodule
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/jujjarapurakesh/jujjarapurakesh/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/jujjarapurakesh/jujjarapurakesh/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/jujjarapurakesh/jujjarapurakesh/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Rakesh473/Rakesh473/output/github-contribution-grid-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Rakesh473/Rakesh473/output/github-contribution-grid-snake.svg" />
+  <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/Rakesh473/Rakesh473/output/github-contribution-grid-snake-dark.svg" />
 </picture>
 
 </div>
 
-> **⚙️ Setup Note:** To enable the snake animation, create `.github/workflows/snake.yml` in your profile repository:
->
-> ```yaml
-> name: Generate Snake Animation
-> on:
->   schedule:
->     - cron: "0 */12 * * *"
->   workflow_dispatch:
->   push:
->     branches: [main]
-> jobs:
->   generate:
->     runs-on: ubuntu-latest
->     timeout-minutes: 10
->     steps:
->       - uses: Platane/snk@v3
->         with:
->           github_user_name: ${{ github.repository_owner }}
->           outputs: |
->             dist/github-contribution-grid-snake.svg
->             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
->       - uses: crazy-max/ghaction-github-pages@v3
->         with:
->           target_branch: output
->           build_dir: dist
->         env:
->           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-> ```
+
 
 ---
 
@@ -190,15 +122,15 @@ endmodule
 <table>
   <tr>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=jujjarapurakesh&show_icons=true&theme=github_dark&hide_border=true&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&bg_color=0d1117&include_all_commits=true&count_private=true&rank_icon=github" width="420" />
+      <img src="https://github-readme-stats.vercel.app/api?username=Rakesh473&show_icons=true&theme=github_dark&hide_border=true&title_color=00d4ff&icon_color=00d4ff&text_color=c9d1d9&bg_color=0d1117&include_all_commits=true&count_private=true&rank_icon=github" width="420" />
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jujjarapurakesh&layout=compact&theme=github_dark&hide_border=true&title_color=00d4ff&text_color=c9d1d9&bg_color=0d1117&langs_count=8" width="320" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rakesh473&layout=compact&theme=github_dark&hide_border=true&title_color=00d4ff&text_color=c9d1d9&bg_color=0d1117&langs_count=8" width="320" />
     </td>
   </tr>
   <tr>
     <td colspan="2" align="center">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=jujjarapurakesh&theme=github-dark-blue&hide_border=true&ring=00d4ff&fire=ff6b35&currStreakLabel=00d4ff&sideLabels=c9d1d9&dates=8b949e&background=0d1117&stroke=00d4ff" width="600" />
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Rakesh473&theme=github-dark-blue&hide_border=true&ring=00d4ff&fire=ff6b35&currStreakLabel=00d4ff&sideLabels=c9d1d9&dates=8b949e&background=0d1117&stroke=00d4ff" width="600" />
     </td>
   </tr>
 </table>
@@ -213,8 +145,9 @@ endmodule
 
 ## 🛠️ Tech Stack & Skills
 
-### 💻 Programming Languages
+<div align="center">
 
+### 💻 Programming Languages
 <p>
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
   <img src="https://img.shields.io/badge/C++-00427E?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
@@ -223,18 +156,17 @@ endmodule
 </p>
 
 ### 🔧 Tools & IDEs
-
 <p>
   <img src="https://img.shields.io/badge/Xilinx%20Vivado-E01F27?style=for-the-badge&logo=xilinx&logoColor=white" />
   <img src="https://img.shields.io/badge/EDA%20Playground-2196F3?style=for-the-badge&logo=verilog&logoColor=white" />
   <img src="https://img.shields.io/badge/Arduino%20IDE-00979D?style=for-the-badge&logo=arduino&logoColor=white" />
   <img src="https://img.shields.io/badge/Proteus-1565C0?style=for-the-badge&logo=proteus&logoColor=white" />
+  <img src="https://img.shields.io/badge/PSpice-FF6600?style=for-the-badge&logo=cadence&logoColor=white" />
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
 </p>
 
 ### ⚙️ Technologies
-
 <p>
   <img src="https://img.shields.io/badge/IoT-00B4D8?style=for-the-badge&logo=internetofthings&logoColor=white" />
   <img src="https://img.shields.io/badge/Embedded%20Systems-2ECC71?style=for-the-badge&logo=arm&logoColor=white" />
@@ -245,7 +177,6 @@ endmodule
 </p>
 
 ### 🎯 Domains of Expertise
-
 <p>
   <img src="https://img.shields.io/badge/VLSI%20Design-00D4FF?style=for-the-badge&logo=microchip&logoColor=0d1117" />
   <img src="https://img.shields.io/badge/RTL%20Design-0080FF?style=for-the-badge&logo=verilog&logoColor=white" />
@@ -254,7 +185,6 @@ endmodule
 </p>
 
 ### 🧠 Core Competencies
-
 <p>
   <img src="https://img.shields.io/badge/Problem%20Solving-F39C12?style=for-the-badge&logo=lightbulb&logoColor=white" />
   <img src="https://img.shields.io/badge/Digital%20Logic%20Design-9B59B6?style=for-the-badge&logo=chip&logoColor=white" />
@@ -262,6 +192,7 @@ endmodule
   <img src="https://img.shields.io/badge/Circuit%20Analysis-1ABC9C?style=for-the-badge&logo=multimeter&logoColor=white" />
 </p>
 
+</div>
 ---
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
@@ -276,19 +207,19 @@ endmodule
       <h3>🏢 IoT & Embedded Systems Intern</h3>
       <img src="https://img.shields.io/badge/Eduexpose-Completed%20✅-00d4ff?style=flat-square&labelColor=0d1117" />
       <br/>
-      <img src="https://img.shields.io/badge/Duration-May%202026%20–%20July%202026-8b949e?style=flat-square&labelColor=0d1117" />
+      <img src="https://img.shields.io/badge/Duration-May%202026%20–%20June%202026-8b949e?style=flat-square&labelColor=0d1117" />
       <br/><br/>
       <p>Worked on hands-on embedded systems development encompassing sensor interfacing, actuator control, microcontroller programming, hardware debugging, and end-to-end IoT application design. Gained practical exposure to real-world hardware–software integration challenges.</p>
       <p><b>Skills:</b> <code>Embedded C</code> · <code>Sensors & Actuators</code> · <code>Microcontrollers</code> · <code>IoT Systems</code> · <code>Debugging</code></p>
     </td>
     <td width="50%" valign="top">
-      <h3>🏛️ Summer Internship — Electronics</h3>
-      <img src="https://img.shields.io/badge/IIT%20Guwahati%20(TIH)-Completed%20✅-00d4ff?style=flat-square&labelColor=0d1117" />
+      <h3>🏛️ Summer Internship — AI/ML</h3>
+      <img src="https://img.shields.io/badge/IIT%20Guwahati%20(TIH)-In%20Progress%20🔄-00d4ff?style=flat-square&labelColor=0d1117" />
       <br/>
       <img src="https://img.shields.io/badge/Duration-June%202026%20–%20July%202026-8b949e?style=flat-square&labelColor=0d1117" />
       <br/><br/>
-      <p>Participated in the prestigious <strong>Technology Innovation Hub (TIH)</strong> summer program at IIT Guwahati. Worked on electronics project development, system implementation, rigorous testing, technical report writing, and formal project presentations.</p>
-      <p><b>Skills:</b> <code>Electronics Design</code> · <code>Project Development</code> · <code>Testing & Validation</code> · <code>Technical Reporting</code></p>
+      <p>Completed coursework at <strong>IIT Guwahati</strong> in Python Programming, Data Analysis, File Handling, and Machine Learning Foundations. Gained hands-on experience with Python, NumPy, Pandas, Matplotlib, Seaborn, Scikit-learn, and basic machine learning techniques.</p>
+      <p><b>Skills:</b> <code>Python</code> · <code>Python Libraries</code> · <code>Data Analysis</code> · <code>Data Preprocessing</code> · <code>Machine Learning Fundamentals</code></p>
     </td>
   </tr>
 </table>
@@ -305,12 +236,12 @@ endmodule
 
 <table>
   <tr>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" align="center">
       <h3>📡 Offline Communication System using LoRa</h3>
       <img src="https://img.shields.io/badge/Status-Completed-00d4ff?style=flat-square&labelColor=0d1117" />
       <br/><br/>
-      <p>A LoRa-based emergency communication and GPS tracking system built using <strong>Arduino Uno</strong>, <strong>SX1278 LoRa module</strong>, <strong>Neo-6M GPS</strong>, and an <strong>OLED display</strong>. Designed for offline, infrastructure-free real-time location sharing.</p>
-      <p>
+      <p align="left">A LoRa-based emergency communication and GPS tracking system built using <strong>Arduino Uno</strong>, <strong>SX1278 LoRa module</strong>, <strong>Neo-6M GPS</strong>, and an <strong>OLED display</strong>. Designed for offline, infrastructure-free real-time location sharing.</p>
+      <p align="left">
         <img src="https://img.shields.io/badge/Arduino%20IDE-00979D?style=flat-square&logo=arduino&logoColor=white" />
         <img src="https://img.shields.io/badge/C%2FC++-00599C?style=flat-square&logo=c&logoColor=white" />
         <img src="https://img.shields.io/badge/LoRa-1ABC9C?style=flat-square" />
@@ -322,12 +253,12 @@ endmodule
         <img src="https://img.shields.io/badge/View%20Repository-0d1117?style=for-the-badge&logo=github&logoColor=white" />
       </a>
     </td>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" align="center">
       <h3>🧮 K-Map Solver using C</h3>
       <img src="https://img.shields.io/badge/Status-Completed-00d4ff?style=flat-square&labelColor=0d1117" />
       <br/><br/>
-      <p>A console-based <strong>Karnaugh Map Solver</strong> supporting 2 to 4 variable Boolean expressions. Implements the Quine–McCluskey grouping logic to generate minimized SOP expressions — a digital logic design toolkit in pure C.</p>
-      <p>
+      <p align="left">A console-based <strong>Karnaugh Map Solver</strong> supporting 2 to 4 variable Boolean expressions. Implements the Quine–McCluskey grouping logic to generate minimized SOP expressions — a digital logic design toolkit in pure C.</p>
+      <p align="left">
         <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white" />
         <img src="https://img.shields.io/badge/Digital%20Logic-9B59B6?style=flat-square" />
         <img src="https://img.shields.io/badge/Boolean%20Algebra-E74C3C?style=flat-square" />
@@ -336,12 +267,12 @@ endmodule
         <img src="https://img.shields.io/badge/View%20Repository-0d1117?style=for-the-badge&logo=github&logoColor=white" />
       </a>
     </td>
-    <td width="33%" valign="top">
+    <td width="33%" valign="top" align="center">
       <h3>😊 Emotion Detection System</h3>
       <img src="https://img.shields.io/badge/Status-Completed-00d4ff?style=flat-square&labelColor=0d1117" />
       <br/><br/>
-      <p>A real-time facial emotion recognition system combining <strong>Python OpenCV</strong> deep learning models with <strong>Arduino hardware</strong> integration. Detected emotions are transmitted via <strong>I2C</strong> to display on embedded hardware in real time.</p>
-      <p>
+      <p align="left">A real-time facial emotion recognition system combining <strong>Python OpenCV</strong> deep learning models with <strong>Arduino hardware</strong> integration. Detected emotions are transmitted via <strong>I2C</strong> to display on embedded hardware in real time.</p>
+      <p align="left">
         <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white" />
         <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=FFD43B" />
         <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white" />
@@ -370,7 +301,6 @@ endmodule
 | Semiconductor 101 v1.0 | Cadence Design Systems | ![Cadence](https://img.shields.io/badge/Cadence-ED1C24?style=flat-square&logo=cadence&logoColor=white) | [View](#) |
 | Digital IC Design Fundamentals v2.0 | Cadence Design Systems | ![Cadence](https://img.shields.io/badge/Cadence-ED1C24?style=flat-square&logo=cadence&logoColor=white) | [View](#) |
 | Verilog Language and Application v28.0 | Cadence Design Systems | ![Cadence](https://img.shields.io/badge/Cadence-ED1C24?style=flat-square&logo=cadence&logoColor=white) | [View](#) |
-| Certified in C Programming | Cisco Networking Academy | ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white) | [View](#) |
 | Microsoft Office Specialist: Excel Associate | Microsoft | ![Microsoft](https://img.shields.io/badge/Microsoft-217346?style=flat-square&logo=microsoftexcel&logoColor=white) | [View](#) |
 | Power BI Specialist | Microsoft | ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=0d1117) | [View](#) |
 
@@ -393,7 +323,7 @@ endmodule
       <img src="https://img.shields.io/badge/DSA-290%2B%20Problems%20Solved-00D4FF?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0d1117" />
     </td>
     <td align="center">
-      <img src="https://img.shields.io/badge/CodeChef-⭐%201--Star%20%7C%201132%20Rating-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=0d1117" />
+      <img src="https://img.shields.io/badge/CodeChef-⭐%201--Star%20%7C%201153%20Rating-5B4638?style=for-the-badge&logo=codechef&logoColor=white&labelColor=0d1117" />
     </td>
   </tr>
   <tr>
@@ -421,23 +351,23 @@ endmodule
 
 <div align="center">
 
-<a href="#">
+<a href="https://leetcode.com/u/Rakesh__2007/">
   <img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=0d1117" />
 </a>
 &nbsp;
-<a href="#">
+<a href="https://www.codechef.com/users/j_rakesh">
   <img src="https://img.shields.io/badge/CodeChef-Profile-5B4638?style=for-the-badge&logo=codechef&logoColor=white" />
 </a>
 &nbsp;
-<a href="#">
+<a href="https://www.hackerrank.com/profile/jujjarapurakesh">
   <img src="https://img.shields.io/badge/HackerRank-Profile-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white" />
 </a>
 &nbsp;
-<a href="#">
+<a href="https://www.geeksforgeeks.org/profile/jujjarap0teh">
   <img src="https://img.shields.io/badge/GeeksforGeeks-Profile-0F9D58?style=for-the-badge&logo=geeksforgeeks&logoColor=white" />
 </a>
 &nbsp;
-<a href="#">
+<a href="https://hdlbits.01xz.net/wiki/Special:VlgStats/Me">
   <img src="https://img.shields.io/badge/HDLBits-Profile-FF6B35?style=for-the-badge&logo=verilog&logoColor=white" />
 </a>
 
@@ -453,15 +383,15 @@ endmodule
 
 <div align="center">
 
-<a href="mailto:your.email@example.com">
+<a href="mailto:jujjarapurakesh@gmail.com">
   <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 &nbsp;
-<a href="https://linkedin.com/in/your-linkedin">
+<a href="https://www.linkedin.com/in/jujjarapu-rakesh-329937334/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
 &nbsp;
-<a href="https://github.com/jujjarapurakesh">
+<a href="https://github.com/Rakesh473">
   <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 &nbsp;
